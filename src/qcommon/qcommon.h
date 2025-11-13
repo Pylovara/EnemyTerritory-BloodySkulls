@@ -393,7 +393,10 @@ You or the server may be running older versions of the game. Press the auto-upda
  */
 extern int demo_protocols[];
 
-#define MASTER_SERVER_NAME  "master.etlegacy.com"                ///< location of the master server
+#define MASTER_SERVER_NAME  "master0.etmaster.net"               ///< community masterserver (et2.55/2.60b compatibility)
+// If DNS is not available, you can use an IP fallback. Historically used addresses:
+// 91.220.53.73 or 91.220.53.121 mapped to etmaster.idsoftware.com/etmaster.net
+// #define MASTER_SERVER_NAME  "91.220.53.73"
 #define MOTD_SERVER_NAME    "motd.etlegacy.com"                  ///< location of the message of the day server
 #define UPDATE_SERVER_NAME  "update.etlegacy.com"                ///< location of the update server
 
